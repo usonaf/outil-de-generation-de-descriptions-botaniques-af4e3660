@@ -1,0 +1,289 @@
+{
+  "run_id": "run-1779659877022",
+  "job_index": 2,
+  "params": {
+    "owner_user_id": "user-1774822953462",
+    "owner_username": "admin",
+    "owner_display_name": "Administrator",
+    "count": 5,
+    "archetype": "generator",
+    "market": "France",
+    "language": "fr",
+    "country": "FR",
+    "brief": "Une ressource pour les pépiniéristes et les jardiniers professionnels afin de créer des fiches plantes inform…",
+    "notes": "Produisez des descriptions détaillées et attrayantes pour des plantes rares et communes, adaptées aux catalogues de vente.\nFocus on plant characteristics (light, water, soil, bloom time, size), potential uses (ornamental, edible, medicinal), and origin. Visually appealing design that reflects nature.",
+    "import_notes": "",
+    "growth_job_id": "",
+    "growth_slug": "",
+    "growth_kind": "",
+    "external_site_request_id": "",
+    "external_client_ref": "",
+    "external_source_label": "",
+    "dashboard_mode": "builder",
+    "network_site_format": "forum",
+    "network_primary_topic": "",
+    "network_primary_geo": "",
+    "network_domain_pool": "forum-de-jeu.shop",
+    "network_hosting_pool": "4vps:netoper | server_id=447345 | ip=5.253.59.18 | ssh_user=root | ssh_port=22",
+    "network_dns_strategy": "auto_pool_assign",
+    "network_domain_flow": "manual",
+    "network_content_strategy": "",
+    "network_model_concept": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_seo": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_build": "google/gemini-2.5-flash",
+    "network_model_qa": "anthropic/claude-haiku-4.5",
+    "network_model_growth": "google/gemini-2.5-flash-lite:nitro",
+    "network_blueprint_id": "",
+    "mode": "production",
+    "run_kind": "generated_batch",
+    "publish_target": "render",
+    "requested_publish_target": "render",
+    "provider_space_id": "provider-space",
+    "provider_space_name": "Provider space",
+    "allow_url_fallback": false,
+    "railway_project_id_override": "",
+    "railway_environment_id_override": "",
+    "railway_service_id_override": "",
+    "railway_service_name_override": "",
+    "github_repo_private": true,
+    "stage_models": {
+      "ideation": "google/gemini-2.5-flash-lite:nitro",
+      "spec": "google/gemini-2.5-flash",
+      "copy": "google/gemini-2.5-flash-lite:nitro",
+      "qa": "anthropic/claude-haiku-4.5",
+      "escalation": "anthropic/claude-sonnet-4.6"
+    },
+    "archetype_display": "mixed batch",
+    "archetype_mix": [
+      "calculator",
+      "generator",
+      "tool"
+    ],
+    "forced_design_theme": "aperture-lab",
+    "forced_structure_preset": "editorial-rail",
+    "site_idea_title": "Outil de Génération de Descriptions Botaniques pour Pépiniéristes",
+    "site_idea_summary": "Produisez des descriptions détaillées et attrayantes pour des plantes rares et communes, adaptées aux catalogues de vente."
+  },
+  "site_spec": {
+    "slug": "outil-de-generation-de-descriptions-botaniques-af4e3660",
+    "theme": {
+      "name": "Aperture Lab",
+      "slug": "aperture-lab",
+      "eyebrow": "Interface Research",
+      "family": "aperture-lab",
+      "moods": [
+        "technical",
+        "experimental",
+        "smart",
+        "crisp"
+      ],
+      "archetypes": [
+        "tool",
+        "generator",
+        "calculator"
+      ],
+      "niches": [
+        "ai tools",
+        "research",
+        "testing",
+        "labs",
+        "analysis"
+      ],
+      "keywords": [
+        "lab",
+        "research",
+        "interface",
+        "signal",
+        "smart"
+      ],
+      "token_index": [
+        "analysis",
+        "aperture",
+        "calculator",
+        "crisp",
+        "experimental",
+        "generator",
+        "interface",
+        "lab",
+        "labs",
+        "research",
+        "signal",
+        "smart",
+        "technical",
+        "testing",
+        "tool",
+        "tools"
+      ],
+      "font_embed": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap",
+      "display_font": "\"Space Grotesk\", sans-serif",
+      "body_font": "\"Inter\", sans-serif",
+      "layout": "asymmetric",
+      "card_style": "glass",
+      "button_style": "gradient",
+      "decor_style": "ribbons",
+      "hero_template": "0.88fr 1.12fr",
+      "seo_template": "1.18fr 0.82fr",
+      "feature_columns": 2,
+      "faq_columns": 3,
+      "hero_min_height": "78vh",
+      "panel_radius": "28px",
+      "card_radius": "26px",
+      "chip_radius": "999px",
+      "button_radius": "18px",
+      "outline_width": "1px",
+      "backdrop_blur": "16px",
+      "palette": {
+        "bg": "radial-gradient(circle at top, #e0f2fe 0%, #dbeafe 30%, #0f172a 100%)",
+        "surface": "rgba(15,23,42,0.78)",
+        "surface_border": "rgba(56,189,248,0.18)",
+        "text": "#eff6ff",
+        "muted": "#cbd5e1",
+        "accent": "#38bdf8",
+        "accent_alt": "#22c55e",
+        "hero_glow": "rgba(56, 189, 248, 0.18)",
+        "button_text": "#062236",
+        "panel_alt": "rgba(255,255,255,0.04)",
+        "shadow": "0 26px 80px rgba(2, 6, 23, 0.34)",
+        "input_fill": "rgba(255,255,255,0.05)"
+      }
+    },
+    "structure": {
+      "name": "Editorial Rail",
+      "slug": "editorial-rail",
+      "hero_variant": "editorial",
+      "proof_variant": "rail",
+      "section_order": [
+        "seo",
+        "features",
+        "proof",
+        "faq"
+      ],
+      "feature_columns": 2,
+      "faq_columns": 2,
+      "family": "editorial",
+      "moods": [
+        "calm",
+        "trust",
+        "luxury"
+      ],
+      "archetypes": [
+        "calculator",
+        "generator",
+        "tool"
+      ],
+      "niches": [
+        "property",
+        "documents",
+        "consulting",
+        "insurance"
+      ],
+      "keywords": [
+        "editorial",
+        "rail",
+        "storytelling",
+        "magazine"
+      ],
+      "token_index": [
+        "calculator",
+        "calm",
+        "consulting",
+        "documents",
+        "editorial",
+        "faq",
+        "features",
+        "generator",
+        "insurance",
+        "luxury",
+        "magazine",
+        "proof",
+        "property",
+        "rail",
+        "seo",
+        "storytelling",
+        "tool",
+        "trust"
+      ]
+    },
+    "render_direction": "signal-bento",
+    "render_direction_name": "Signal Bento",
+    "page_blueprint": "briefing-board",
+    "page_blueprint_name": "Briefing Board",
+    "title": "Outil de Génération de Descriptions Botaniques pour Pépiniéristes",
+    "tagline": "Créez vos Fiches Plantes",
+    "description": "Produisez des descriptions détaillées et attrayantes pour des plantes rares et communes, adaptées aux catalogues de vente.",
+    "feature_prefix": "Bloc",
+    "action": "Générer le document",
+    "cta_primary": "Générer la Description",
+    "cta_secondary": "Consulter la FAQ",
+    "inputs": [
+      {
+        "id": "name",
+        "label": "Nom ou entreprise",
+        "type": "text",
+        "placeholder": "Studio Horizon",
+        "weight": 1.0
+      },
+      {
+        "id": "goal",
+        "label": "Objectif du document",
+        "type": "text",
+        "placeholder": "confirmation de demande",
+        "weight": 1.0
+      },
+      {
+        "id": "details",
+        "label": "Détails utiles",
+        "type": "text",
+        "placeholder": "date, montant, référence",
+        "weight": 1.0
+      }
+    ],
+    "hero_metrics": [
+      {
+        "value": "Signal Bento",
+        "label": "Cadence"
+      },
+      {
+        "value": "3",
+        "label": "Entrées"
+      },
+      {
+        "value": "Brouillon généré",
+        "label": "Sortie"
+      }
+    ],
+    "trust_labels": [
+      "Signal Bento",
+      "Générer la Description",
+      "Brouillon généré",
+      "Utilitaire immédiat",
+      "Structure SEO claire"
+    ],
+    "result_label": "Brouillon généré",
+    "result_unit": "",
+    "runtime_mode": "document_generator",
+    "page_variant": "console",
+    "faq_topic": "Outil de Génération de Descriptions Botaniques pour Pépiniéristes",
+    "faq_entries": [
+      {
+        "question": "Pourquoi utiliser cet outil pour Outil de Génération de Descriptions Botaniques pour Pépiniéristes ?",
+        "answer": "Il aide à cadrer le besoin rapidement et à orienter vers une prochaine action claire sur le marché France."
+      },
+      {
+        "question": "Le résultat est-il immédiat ?",
+        "answer": "Oui. L'interface est pensée pour une réponse rapide, lisible et exploitable dès la première interaction."
+      },
+      {
+        "question": "Cette page est-elle adaptée au SEO ?",
+        "answer": "Oui. La structure mélange utilité, clarté éditoriale et signaux de confiance sans surcharger l'expérience."
+      }
+    ],
+    "seo_paragraphs": [
+      "Cette page capte une intention forte autour de Outil de Génération de Descriptions Botaniques pour Pépiniéristes et la transforme en action utile pour un public situé sur France.",
+      "Le format hero-first accélère la compréhension, réduit les frictions et améliore la lisibilité sur mobile comme sur desktop.",
+      "Le socle reste volontairement simple pour faciliter les tests, la QA continue et les variations SEO."
+    ],
+    "document_html": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Outil de Génération de Descriptions Botaniques pour Pépiniéristes | Créez vos Fiches Plantes</title>\n    <meta name=\"description\" content=\"Produisez des descriptions détaillées et attrayantes pour des plantes rares et communes, adaptées aux catalogues de vente.\">\n    <style>\n        :root {\n            --color-primary: #34495E;\n            --color-secondary: #2ECC71;\n            --color-accent: #E74C3C;\n            --color-text: #2C3E50;\n            --color-background: #ECF0F1;\n            --color-light-grey: #BDC3C7;\n            --font-family-display: 'Arial Black', sans-serif;\n            --font-family-body: 'Arial', sans-serif;\n        }\n\n        body {\n            font-family: var(--font-family-body);\n            margin: 0;\n            padding: 0;\n            background-color: var(--color-background);\n            color: var(--color-text);\n            line-height: 1.6;\n            overflow-x: hidden;\n        }\n\n        h1, h2, h3 {\n            font-family: var(--font-family-display);\n            color: var(--color-primary);\n            text-transform: uppercase;\n        }\n\n        h1 {\n            font-size: 3.5em;\n            letter-spacing: 2px;\n            margin-bottom: 0.2em;\n            line-height: 1;\n        }\n\n        h2 {\n            font-size: 2.2em;\n            margin-top: 2em;\n            margin-bottom: 0.8em;\n        }\n\n        h3 {\n            font-size: 1.5em;\n            margin-top: 1.5em;\n            margin-bottom: 0.5em;\n        }\n\n        header {\n            background-color: var(--color-primary);\n            color: white;\n            padding: 60px 5% 40px;\n            text-align: center;\n            position: relative;\n            z-index: 10;\n        }\n\n        header p {\n            font-size: 1.3em;\n            max-width: 800px;\n            margin: 0.5em auto 0;\n            color: var(--color-light-grey);\n        }\n\n        .container {\n            max-width: 1000px;\n            margin: 0 auto;\n            padding: 20px 5%;\n        }\n\n        .section {\n            background-color: white;\n            padding: 40px 5%;\n            margin-bottom: 30px;\n            border-radius: 8px;\n            box-shadow: 0 4px 15px rgba(0,0,0,0.08);\n        }\n\n        .section.color-block {\n            background-color: var(--color-secondary);\n            color: white;\n            box-shadow: none;\n            border-radius: 0;\n            margin-bottom: 0;\n            padding: 60px 5%;\n            text-align: center;\n        }\n\n        .section.color-block h2 {\n            color: white;\n            margin-top: 0;\n        }\n\n        form {\n            display: grid;\n            gap: 20px;\n            padding: 30px 0;\n        }\n\n        label {\n            display: block;\n            margin-bottom: 8px;\n            font-weight: bold;\n            color: var(--color-primary);\n            font-size: 0.95em;\n        }\n\n        input[type=\"text\"],\n        input[type=\"number\"],\n        textarea,\n        select {\n            width: calc(100% - 20px);\n            padding: 12px;\n            border: 1px solid var(--color-light-grey);\n            border-radius: 5px;\n            font-size: 1em;\n            font-family: var(--font-family-body);\n            transition: border-color 0.3s ease;\n        }\n\n        input[type=\"text\"]:focus,\n        input[type=\"number\"]:focus,\n        textarea:focus,\n        select:focus {\n            border-color: var(--color-secondary);\n            outline: none;\n        }\n\n        textarea {\n            min-height: 120px;\n            resize: vertical;\n        }\n\n        button {\n            background-color: var(--color-accent);\n            color: white;\n            padding: 15px 25px;\n            border: none;\n            border-radius: 5px;\n            cursor: pointer;\n            font-size: 1.1em;\n            font-weight: bold;\n            transition: background-color 0.3s ease, transform 0.2s ease;\n            text-transform: uppercase;\n            letter-spacing: 1px;\n            margin-top: 20px;\n        }\n\n        button:hover {\n            background-color: #C0392B;\n            transform: translateY(-2px);\n        }\n\n        #tool-result {\n            background-color: #F8F9F9;\n            border-left: 5px solid var(--color-secondary);\n            padding: 25px;\n            margin-top: 30px;\n            border-radius: 5px;\n            font-size: 1.1em;\n            color: var(--color-text);\n            white-space: pre-wrap;\n            word-wrap: break-word;\n            box-shadow: inset 0 0 10px rgba(0,0,0,0.05);\n            line-height: 1.8;\n            font-family: monospace;\n            display: none; /* Hidden by default */\n        }\n\n        #tool-result h3 {\n            color: var(--color-primary);\n            margin-top: 0;\n            border-bottom: 1px dashed var(--color-light-grey);\n            padding-bottom: 10px;\n        }\n\n        .result-group {\n            margin-bottom: 20px;\n            padding-bottom: 15px;\n            border-bottom: 1px solid var(--color-light-grey);\n        }\n        .result-group:last-child {\n            border-bottom: none;\n            margin-bottom: 0;\n            padding-bottom: 0;\n        }\n        .result-group p {\n            background-color: #fff;\n            padding: 10px 15px;\n            border-radius: 4px;\n            margin-bottom: 8px;\n            box-shadow: 0 1px 3px rgba(0,0,0,0.05);\n        }\n\n        .cta-buttons {\n            display: flex;\n            justify-content: center;\n            gap: 20px;\n            margin-top: 30px;\n            flex-wrap: wrap;\n        }\n\n        .cta-buttons button {\n            background-color: var(--color-primary);\n            color: white;\n            padding: 12px 20px;\n            font-size: 1em;\n            margin-top: 0;\n        }\n        .cta-buttons button:hover {\n            background-color: #2C3E50;\n        }\n\n        footer {\n            background-color: var(--color-primary);\n            color: white;\n            text-align: center;\n            padding: 40px 5%;\n            margin-top: 50px;\n        }\n\n        footer a {\n            color: var(--color-secondary);\n            text-decoration: none;\n        }\n\n        .seo-section {\n            background-color: #F4F6F7;\n            padding: 40px 5%;\n            text-align: center;\n            color: var(--color-text);\n            font-size: 0.9em;\n            line-height: 1.8;\n        }\n\n        .seo-section h3 {\n            color: var(--color-primary);\n            margin-bottom: 20px;\n        }\n\n        .seo-section p {\n            max-width: 900px;\n            margin: 0 auto 1em;\n            text-align: left;\n        }\n\n        .seo-section ul {\n            max-width: 900px;\n            margin: 0 auto 20px;\n            text-align: left;\n            list-style-type: disc;\n            padding-left: 20px;\n        }\n\n        @media (max-width: 768px) {\n            h1 {\n                font-size: 2.5em;\n            }\n            h2 {\n                font-size: 1.8em;\n            }\n            header {\n                padding: 40px 5% 20px;\n            }\n            .section {\n                padding: 30px 5%;\n            }\n            form {\n                grid-template-columns: 1fr;\n            }\n            .cta-buttons {\n                flex-direction: column;\n                gap: 15px;\n            }\n        }\n    </style>\n    <meta name=\"robots\" content=\"index, follow\">\n    <link rel=\"canonical\" href=\"https://outil-de-generation-de-descriptions-botaniques-af4e3660.onrender.com\">\n    <meta property=\"og:title\" content=\"Outil de Génération de Descriptions Botaniques pour Pépiniéristes\">\n    <meta property=\"og:description\" content=\"Produisez des descriptions détaillées et attrayantes pour des plantes rares et communes, adaptées aux catalogues de vente.\">\n    <meta property=\"og:url\" content=\"https://outil-de-generation-de-descriptions-botaniques-af4e3660.onrender.com\">\n    <meta property=\"og:type\" content=\"website\">\n    <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Outil de Génération de Descriptions Botaniques pour Pépiniéristes\", \"description\": \"Produisez des descriptions détaillées et attrayantes pour des plantes rares et communes, adaptées aux catalogues de vente.\", \"url\": \"https://outil-de-generation-de-descriptions-botaniques-af4e3660.onrender.com\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Web Browser\"}</script>\n</head>\n<body data-site-slug=\"outil-de-generation-de-descriptions-botaniques-af4e3660\" data-runtime-mode=\"document_generator\">\n    <header>\n        <h1>Outil de Génération de Descriptions Botaniques</h1>\n        <p>Produisez des descriptions détaillées et attrayantes pour des plantes rares et communes, adaptées aux catalogues de vente. Idéal pour les pépiniéristes et jardiniers professionnels.</p>\n    </header>\n\n    <div class=\"container\">\n        <section class=\"section\">\n            <h2>Créez vos Fiches Plantes</h2>\n            <p>Remplissez les informations ci-dessous pour obtenir des descriptions riches et précises. Mettez en valeur chaque spécimen de votre collection avec des textes optimisés pour la vente et l'information.</p>\n\n            <form id=\"tool-form\">\n                <label for=\"plantName\">Nom de la plante (français) :</label>\n                <input type=\"text\" id=\"plantName\" placeholder=\"Ex: Lavande vraie\" required>\n\n                <label for=\"scientificName\">Nom scientifique (latin) :</label>\n                <input type=\"text\" id=\"scientificName\" placeholder=\"Ex: Lavandula angustifolia\" required>\n\n                <label for=\"plantType\">Type de plante :</label>\n                <select id=\"plantType\" required>\n                    <option value=\"\">Sélectionnez un type</option>\n                    <option value=\"arbuste\">Arbuste</option>\n                    <option value=\"vivace\">Vivace</option>\n                    <option value=\"annuelle\">Annuelle</option>\n                    <option value=\"arbre\">Arbre</option>\n                    <option value=\"fleur\">Fleur</option>\n                    <option value=\"fruitier\">Arbre Fruitier</option>\n                    <option value=\"aromatique\">Plante Aromatique</option>\n                    <option value=\"grimpante\">Plante Grimpante</option>\n                    <option value=\"aquatique\">Plante Aquatique</option>\n                    <option value=\"succulente\">Plante Succulente</option>\n                </select>\n\n                <label for=\"origin\">Origine / Habitat Naturel :</label>\n                <input type=\"text\" id=\"origin\" placeholder=\"Ex: Bassin méditerranéen, collines rocailleuses\">\n\n                <label for=\"height\">Taille adulte (cm) :</label>\n                <input type=\"number\" id=\"height\" min=\"1\" max=\"10000\" placeholder=\"Ex: 60\">\n\n                <label for=\"spread\">Envergure / Largeur adulte (cm) :</label>\n                <input type=\"number\" id=\"spread\" min=\"1\" max=\"10000\" placeholder=\"Ex: 50\">\n\n                <label for=\"light\">Exposition idéale :</label>\n                <select id=\"light\" required>\n                    <option value=\"\">Sélectionnez l'exposition</option>\n                    <option value=\"soleil\">Plein soleil</option>\n                    <option value=\"mi-ombre\">Mi-ombre</option>\n                    <option value=\"ombre\">Ombre</option>\n                    <option value=\"indifferent\">Indifférente</option>\n                </select>\n\n                <label for=\"water\">Besoins en eau :</label>\n                <select id=\"water\" required>\n                    <option value=\"\">Sélectionnez les besoins</option>\n                    <option value=\"faible\">Faibles (sec)</option>\n                    <option value=\"moyen\">Modérés</option>\n                    <option value=\"eleve\">Élevés (humide)</option>\n                </select>\n\n                <label for=\"soil\">Type de sol préféré :</label>\n                <input type=\"text\" id=\"soil\" placeholder=\"Ex: Léger, bien drainé, calcaire\">\n\n                <label for=\"bloomTime\">Période de floraison :</label>\n                <input type=\"text\" id=\"bloomTime\" placeholder=\"Ex: Juin à août\">\n\n                <label for=\"foliage\">Feuillage :</label>\n                <input type=\"text\" id=\"foliage\" placeholder=\"Ex: Persistant, gris-vert aromatique\">\n\n                <label for=\"flowers\">Fleurs :</label>\n                <input type=\"text\" id=\"flowers\" placeholder=\"Ex: Épis de petites fleurs violettes, très parfumées\">\n\n                <label for=\"uses\">Utilisations potentielles (séparées par des virgules) :</label>\n                <textarea id=\"uses\" placeholder=\"Ex: Ornementale, comestible (tisane), médicinale, mellifère, répulsif\"></textarea>\n\n                <label for=\"resistance\">Résistance et spécificités (maladies, ravageurs, froid...) :</label>\n                <textarea id=\"resistance\" placeholder=\"Ex: Très résistante à la sécheresse et au froid (-15°C), peu sensible aux maladies\"></textarea>\n\n                <button type=\"submit\" id=\"tool-submit\">Générer la Description</button>\n            </form>\n        </section>\n\n        <section id=\"tool-result\" class=\"section\">\n            <h3 id=\"result-headline\">Votre Fiche Plante Générée</h3>\n            <!-- Result will be injected here by JavaScript -->\n        </section>\n\n        <section class=\"section color-block\">\n            <h2>Pourquoi des descriptions de qualité ?</h2>\n            <p>Une fiche plante détaillée et engageante n'est pas qu'une simple description. C'est une invitation, une promesse et un guide pour vos clients. Elle inspire l'achat, informe sur l'entretien et renforce votre expertise.</p>\n            <div class=\"cta-buttons\">\n                <button data-affiliate-slot=\"catalog-tool\">Découvrez notre outil catalogue</button>\n                <button data-affiliate-slot=\"pro-resources\">Accéder aux ressources pro</button>\n            </div>\n        </section>\n    </div>\n\n    <div class=\"seo-section\">\n        <h3>Optimisez votre Visibilité : Description de Plantes pour Pépiniéristes et Jardiniers Professionnels</h3>\n        <p>Dans le monde compétitif de l'horticulture, une <a href=\"#tool-form\">description de plante</a> détaillée et attrayante est essentielle. Que vous soyez un pépiniériste cherchant à enrichir son catalogue en ligne, un jardinier professionnel en quête de fiches techniques précises ou un horticulteur souhaitant valoriser ses espèces rares, cet outil est conçu pour vous.</p>\n        <p>Notre générateur vous aide à créer des <a href=\"#tool-result\">fiches botaniques</a> complètes, incluant :</p>\n        <ul>\n            <li>Des informations clés : Nom français et scientifique, type de plante.</li>\n            <li>Des données de culture : Exposition (soleil, mi-ombre, ombre), besoins en eau (faible, modéré, élevé), type de sol.</li>\n            <li>Des caractéristiques distinctives : Taille adulte, envergure, période de floraison, feuillage, fleurs.</li>\n            <li>Des usages variés : Ornemental, comestible, médicinal, mellifère, répulsif.</li>\n            <li>Des conseils d'entretien : Résistance aux maladies, ravageurs, froid.</li>\n        </ul>\n        <p>Améliorez le référencement de votre pépinière, attirez plus de clients et facilitez la décision d'achat grâce à des descriptions claires et professionnelles. Ne laissez plus vos plantes parler d'elles-mêmes, donnez-leur une voix avec notre <a href=\"#tool-form\">générateur de texte pour plantes</a>.</p>\n        <p>Utilisez cet outil pour rédiger des textes marketing percutants, alimenter vos réseaux sociaux ou créer des étiquettes de qualité pour vos ventes.</p>\n    </div>\n\n    <footer>\n        <p>© 2023 Solutions Botaniques Pro. Tous droits réservés.</p>\n        <p>Conçu pour l'excellence horticole.</p>\n    </footer>\n\n    <script>\n        document.getElementById('tool-form').addEventListener('submit', function(event) {\n            event.preventDefault();\n\n            const plantName = document.getElementById('plantName').value;\n            const scientificName = document.getElementById('scientificName').value;\n            const plantType = document.getElementById('plantType').value;\n            const origin = document.getElementById('origin').value;\n            const height = document.getElementById('height').value;\n            const spread = document.getElementById('spread').value;\n            const light = document.getElementById('light').value;\n            const water = document.getElementById('water').value;\n            const soil = document.getElementById('soil').value;\n            const bloomTime = document.getElementById('bloomTime').value;\n            const foliage = document.getElementById('foliage').value;\n            const flowers = document.getElementById('flowers').value;\n            const uses = document.getElementById('uses').value;\n            const resistance = document.getElementById('resistance').value;\n\n            const lightMap = {\n                'soleil': 'en plein soleil',\n                'mi-ombre': 'à mi-ombre',\n                'ombre': 'à l\\'ombre',\n                'indifferent': 'indifférente'\n            };\n\n            const waterMap = {\n                'faible': 'faibles, supporte bien la sécheresse',\n                'moyen': 'modérés, préfère un sol frais mais bien drainé',\n                'eleve': 'élevés, aime les sols constamment humides'\n            };\n\n            // Main description generation\n            let description = `<h3>${plantName} (${scientificName})</h3>`;\n            description += `<p>Type de plante : ${plantType.charAt(0).toUpperCase() + plantType.slice(1)}</p>`;\n            if (origin) description += `<p>Origine : ${origin}.</p>`;\n            description += `<p>Dimensions adultes : Atteint généralement ${height} cm de haut pour ${spread} cm de large.</p>`;\n            description += `<p>Exposition : Préfère une exposition ${lightMap[light]}.</p>`;\n            description += `<p>Besoins en eau : ${waterMap[water]}.</p>`;\n            if (soil) description += `<p>Type de sol : S'épanouit dans un sol ${soil}.</p>`;\n            if (bloomTime) description += `<p>Floraison : ${bloomTime}.</p>`;\n            if (foliage) description += `<p>Feuillage : ${foliage}.</p>`;\n            if (flowers) description += `<p>Fleurs : ${flowers}.</p>`;\n            if (uses) description += `<p>Utilisations : ${uses}.</p>`;\n            if (resistance) description += `<p>Résistance : ${resistance}.</p>`;\n\n            // Headline variants\n            const headlines = {\n                'SEO': [\n                    `Découvrez le ${plantName} : Guide Complet de Culture et Entretien`,\n                    `${plantName} (${scientificName}) : Votre Fiche Botanique Détaillée`,\n                    `Acheter ${plantName} : Caractéristiques, Usages et Conseils Pépiniériste`\n                ],\n                'Commercial': [\n                    `Sublimez Votre Jardin avec le ${plantName} d'Exception !`,\n                    `Le ${plantName} : L'Indispensable de Votre Collection Botanique`,\n                    `Offrez-vous la Splendeur du ${plantName} pour un Extérieur Unique`\n                ],\n                'Expert': [\n                    `Analyse Phytogéographique du ${plantName} (${scientificName})`,\n                    `Optimisation de la Culture du ${plantName} : Stratégies pour Professionnels`,\n                    `Fiche Technique Approfondie : Le ${plantName} et Ses Potentiels`\n                ],\n                'Sensoriel': [\n                    `Le ${plantName} : Un Éclat de Couleurs et de Parfums dans Votre Jardin`,\n                    `Éveillez Vos Sens avec le ${plantName} : Douceur et Harmonie Végétale`,\n                    `Invitez la Nature à Chaque Saisons : L'Expérience ${plantName}`\n                ]\n            };\n\n            let resultHTML = description + '<br><h3>Idées de Titres pour Vos Catalogues :</h3>';\n\n            for (const style in headlines) {\n                resultHTML += `<div class=\"result-group\"><h4>Style \"${style}\"</h4>`;\n                headlines[style].forEach(headline => {\n                    resultHTML += `<p>${headline}</p>`;\n                });\n                resultHTML += '</div>';\n            }\n\n            const resultDiv = document.getElementById('tool-result');\n            resultDiv.innerHTML = resultHTML;\n            resultDiv.style.display = 'block'; // Show the result\n            resultDiv.scrollIntoView({ behavior: 'smooth' }); // Scroll to the result\n        });\n    </script>\n<div id=\"qa-smoke-result\" hidden></div>\n<script id=\"farmbuilder-affiliate-helper\">\n(function () {\n  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};\n  document.addEventListener(\"click\", function (event) {\n    const target = event.target.closest(\"[data-affiliate-slot]\");\n    if (!target) return;\n    const slot = target.getAttribute(\"data-affiliate-slot\");\n    const href = window.__UTILITY_AFFILIATE_MAP[slot];\n    if (!href) return;\n    if (target.tagName && target.tagName.toLowerCase() === \"a\") {\n      target.setAttribute(\"href\", href);\n      target.removeAttribute(\"rel\");\n      return;\n    }\n    event.preventDefault();\n    window.open(href, \"_blank\");\n  }, true);\n})();\n</script>\n<script id=\"farmbuilder-functional-qa\">\n(function () {\n  function marker() {\n    let node = document.getElementById(\"qa-smoke-result\");\n    if (node) return node;\n    node = document.createElement(\"div\");\n    node.id = \"qa-smoke-result\";\n    node.hidden = true;\n    document.body.appendChild(node);\n    return node;\n  }\n\n  let qaFinished = false;\n  let qaWatchdog = null;\n\n  function normalize(text) {\n    return String(text || \"\").replace(/\\s+/g, \" \").trim();\n  }\n\n  function findForm() {\n    return document.getElementById(\"tool-form\") || document.querySelector(\"form\");\n  }\n\n  function findResult() {\n    return (\n      document.getElementById(\"tool-result\") ||\n      document.querySelector(\"[data-result]\") ||\n      document.querySelector(\".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis\")\n    );\n  }\n\n  function primaryAction(form) {\n    if (!form) return null;\n    return (\n      document.getElementById(\"tool-submit\") ||\n      form.querySelector(\"#tool-submit\") ||\n      form.querySelector(\"[data-primary-action]\") ||\n      form.querySelector(\"button[type=submit]\") ||\n      form.querySelector(\"button\") ||\n      form.querySelector(\"input[type=submit]\")\n    );\n  }\n\n  function resultSignature(node) {\n    if (!node) return \"\";\n    const text = normalize(node.textContent);\n    const html = normalize(node.innerHTML).slice(0, 600);\n    return `${text}||${html}`;\n  }\n\n  function resultHeadline(node) {\n    if (!node) return \"\";\n    const heading = node.querySelector(\"h1, h2, h3, strong, b\");\n    return normalize(heading ? heading.textContent : \"\");\n  }\n\n  function sampleText(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"} ${field.placeholder || \"\"}`.toLowerCase();\n    if (/email/.test(key)) return \"bonjour@example.com\";\n    if (/url|site|website|lien/.test(key)) return \"https://example.com/offre-solaire\";\n    if (/phone|tel|mobile/.test(key)) return \"0612345678\";\n    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return \"Paris\";\n    if (/orientation/.test(key)) return \"sud\";\n    if (/keyword|theme|topic|sujet|subject/.test(key)) return \"energie solaire domestique\";\n    if (/titre|title/.test(key)) return \"Simulateur solaire maison\";\n    if (/nom|name|project/.test(key)) return \"Projet Horizon\";\n    if (/description|notes|content|message/.test(key)) return \"Maison individuelle exposee sud avec toiture exploitable.\";\n    return field.placeholder || \"France\";\n  }\n\n  function sampleNumber(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"}`.toLowerCase();\n    if (/inclinaison|angle|slope/.test(key)) return \"30\";\n    if (/surface|size|m2|sqm/.test(key)) return \"28\";\n    if (/annee|year/.test(key)) return \"2024\";\n    if (/prix|price|budget|cost|amount|montant/.test(key)) return \"12000\";\n    const min = Number(field.min || \"\");\n    const max = Number(field.max || \"\");\n    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {\n      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));\n    }\n    if (Number.isFinite(min)) return String(Math.max(min, 12));\n    if (Number.isFinite(max)) return String(Math.min(max, 12));\n    return field.value || \"12\";\n  }\n\n  function applySample(field) {\n    const tag = (field.tagName || \"\").toLowerCase();\n    const type = (field.type || \"\").toLowerCase();\n    if (field.disabled) return;\n    if (type === \"hidden\" || type === \"submit\" || type === \"button\" || type === \"reset\" || type === \"image\" || type === \"file\") {\n      return;\n    }\n    const currentValue = normalize(field.value);\n    if (tag === \"select\") {\n      if (currentValue) return;\n      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];\n      if (option) field.value = option.value;\n      return;\n    }\n    if (type === \"checkbox\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"radio\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"date\") {\n      if (currentValue) return;\n      field.value = \"2026-03-01\";\n      return;\n    }\n    if (type === \"email\") {\n      if (currentValue) return;\n      field.value = \"bonjour@example.com\";\n      return;\n    }\n    if (type === \"url\") {\n      if (currentValue) return;\n      field.value = \"https://example.com/offre-solaire\";\n      return;\n    }\n    if (type === \"tel\") {\n      if (currentValue) return;\n      field.value = \"0612345678\";\n      return;\n    }\n    if (type === \"color\") {\n      if (currentValue) return;\n      field.value = \"#2f855a\";\n      return;\n    }\n    if (type === \"number\" || type === \"range\") {\n      if (currentValue) return;\n      field.value = sampleNumber(field);\n      return;\n    }\n    if (currentValue) return;\n    field.value = sampleText(field);\n  }\n\n  function stamp(status, detail, headline, primary) {\n    if (qaFinished) return;\n    qaFinished = true;\n    if (qaWatchdog) {\n      window.clearTimeout(qaWatchdog);\n      qaWatchdog = null;\n    }\n    const node = marker();\n    node.dataset.status = status;\n    node.dataset.mode = \"native-form\";\n    node.dataset.detail = detail || \"\";\n    node.dataset.headline = headline || \"\";\n    node.dataset.primary = primary || \"\";\n    node.dataset.viewport = window.innerWidth <= 640 ? \"mobile\" : \"desktop\";\n    window.setTimeout(function () {\n      try {\n        window.stop();\n      } catch (_error) {}\n    }, 0);\n  }\n\n  function installModalGuards() {\n    const noop = function () {};\n    const approve = function () { return true; };\n    const empty = function () { return \"\"; };\n    try { window.alert = noop; } catch (_error) {}\n    try { window.confirm = approve; } catch (_error) {}\n    try { window.prompt = empty; } catch (_error) {}\n  }\n\n  function triggerAction(form, action) {\n    try {\n      if (typeof form.requestSubmit === \"function\") {\n        form.requestSubmit(action || undefined);\n        return;\n      }\n    } catch (_error) {}\n    if (action && typeof action.click === \"function\") {\n      action.click();\n      return;\n    }\n    form.dispatchEvent(new Event(\"submit\", { bubbles: true, cancelable: true }));\n  }\n\n  function inspectResult(before, attemptsLeft) {\n    const result = findResult();\n    if (!result) {\n      stamp(\"fail\", \"La zone de resultat est introuvable.\", \"\");\n      return;\n    }\n    const after = resultSignature(result);\n    const text = normalize(result.textContent);\n    if (after && after !== before && text.length >= 24) {\n      const primary = result.querySelector(\"a[href], button[data-href], [data-primary-url]\") || document.querySelector(\"#tool-result a[href]\");\n      stamp(\"pass\", \"Le formulaire natif a mis a jour la zone de resultat.\", resultHeadline(result), primary ? (primary.getAttribute(\"href\") || primary.getAttribute(\"data-primary-url\") || \"\") : \"\");\n      return;\n    }\n    if (attemptsLeft > 0) {\n      window.setTimeout(function () {\n        inspectResult(before, attemptsLeft - 1);\n      }, 250);\n      return;\n    }\n    stamp(\"fail\", \"La zone de resultat n'a pas renvoye de contenu exploitable.\", resultHeadline(result));\n  }\n\n  function runSmoke() {\n    const params = new URLSearchParams(window.location.search);\n    if (params.get(\"__qa\") !== \"functional\") return;\n    qaWatchdog = window.setTimeout(function () {\n      stamp(\"fail\", \"QA smoke timed out before the page reported a usable result.\", \"\");\n    }, 7000);\n    const form = findForm();\n    if (!form) {\n      stamp(\"fail\", \"Le formulaire principal est introuvable.\", \"\");\n      return;\n    }\n    const result = findResult();\n    const before = resultSignature(result);\n    installModalGuards();\n    try {\n      form.querySelectorAll(\"input, select, textarea\").forEach(applySample);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke sample failed: ${error.message}` : \"QA smoke sample failed before submit.\", \"\");\n      return;\n    }\n    const action = primaryAction(form);\n    try {\n      triggerAction(form, action);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke submit failed: ${error.message}` : \"QA smoke submit failed.\", \"\");\n      return;\n    }\n    inspectResult(before, 10);\n  }\n\n  window.addEventListener(\"error\", function (event) {\n    const message = event && event.message ? event.message : \"JavaScript runtime error during QA smoke.\";\n    stamp(\"fail\", `QA smoke JS error: ${message}`, \"\");\n  }, { once: true });\n\n  window.addEventListener(\"unhandledrejection\", function (event) {\n    const reason = event && event.reason;\n    const detail = typeof reason === \"string\"\n      ? reason\n      : reason && reason.message\n        ? reason.message\n        : \"Unhandled promise rejection during QA smoke.\";\n    stamp(\"fail\", `QA smoke rejection: ${detail}`, \"\");\n  }, { once: true });\n\n  if (document.readyState === \"loading\") {\n    document.addEventListener(\"DOMContentLoaded\", function () {\n      window.setTimeout(runSmoke, 60);\n    }, { once: true });\n  } else {\n    window.setTimeout(runSmoke, 60);\n  }\n})();\n</script>\n</body>\n</html>",
+    "generation_mode": "direct_html"
+  }
+}
